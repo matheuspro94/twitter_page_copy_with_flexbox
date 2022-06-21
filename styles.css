@@ -25,7 +25,7 @@ body {
 header#main_header {
   height: 46px;
   background: #fff;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 1;
 }
@@ -73,7 +73,8 @@ header#main_header div.side input {
   border-radius: 16px;
   color: #667581;
   font-size: 12px;
-  background: #f5f8fa  url('/app2/images/rounded-magnifying-glass-.png') no-repeat 165px center;
+  background: #f5f8fa url("/app2/images/rounded-magnifying-glass-.png")
+    no-repeat 165px center;
   background-size: 14px;
 }
 
@@ -106,4 +107,186 @@ div.banner {
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+
+div.bar {
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+div.bar .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 285px;
+  height: 100%;
+}
+
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  position: relative;
+}
+
+div.bar .content ul li.active::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3bb9e3;
+}
+
+div.bar .content ul li span {
+  color: #667580;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+div.bar .content ul li strong {
+  color: #667580;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+div.bar .content ul li.active strong {
+  color: #3bb9e3;
+}
+
+div.bar .content .actions {
+  display: flex;
+}
+
+div.bar .content .actions button {
+  height: 34px;
+  background: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
+div.wrapper_content {
+  display: flex;
+}
+
+div.wrapper_content aside.profile {
+  width: 260px;
+}
+
+div.wrapper_content aside.profile img.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  margin-top: -130px;
+}
+
+div.wrapper_content aside.profile h1 {
+  font-size: 21px;
+  color: #1f2226;
+  margin-top: 10px;
+}
+
+div.wrapper_content aside.profile span {
+  font-size: 14px;
+  color: #667580;
+  margin-top: 10px;
+}
+
+div.wrapper_content aside.profile p {
+  font-size: 14px;
+  color: #1f2226;
+  margin-top: 15px;
+}
+
+div.wrapper_content aside.profile ul {
+  margin-top: 20px;
+  list-style: none;
+}
+
+div.wrapper_content aside.profile ul.list li {
+ font-size: 14px;
+  color: #667580;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+div.wrapper_content aside.profile ul.list li:first-child {
+  margin: 0;
+}
+
+div.wrapper_content aside.profile ul.list li img {
+  margin-right: 10px;
+}
+
+div.wrapper_content aside.profile .widget {
+  margin-top: 20px;
+}
+
+div.wrapper_content aside.profile .widget strong{
+  font-weight: normal;
+  color: #3bb9e3;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper_content aside.profile .widget strong img {
+  margin-right: 5px;
+}
+
+div.wrapper_content aside.profile .followers ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.wrapper_content aside.profile .followers ul li {
+  width: 45px;
+  height: 45px;
+  background: #d0d5d9;
+  border-radius: 50%;
+  flex-shrink: 0;
+  flex-grow: 1;
+  margin-right: 5px;
+  margin: 0 5px 10px 0;
+}
+
+div.wrapper_content aside.profile .images ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.wrapper_content aside.profile .images ul li {
+  width: 80px;
+  height: 80px;
+  background: #d0d5d9;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border-radius: 8px;
+  margin-right: 5px;
+  margin: 0 5px 5px 0;
 }
