@@ -78,11 +78,14 @@ header#main_header div.side input {
   background-size: 14px;
 }
 
-header#main_header div.side img {
+header#main_header div.side .avatar {
   height: 34px;
   width: 34px;
   border-radius: 50%;
   margin: 0 15px;
+
+  background: #f5f8fa url("/app2/images/matheus-foto.jpeg") no-repeat center;
+  background-size: cover;
 }
 
 header#main_header div.side button {
@@ -194,12 +197,19 @@ div.wrapper_content aside.profile {
   width: 260px;
 }
 
-div.wrapper_content aside.profile img.avatar {
+div.wrapper_content aside.profile .avatar {
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 5px solid #fff;
   margin-top: -130px;
+
+  background: url("/app2/images/matheus-foto.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+div.wrapper_content aside.profile > img.avatar {
+  
 }
 
 div.wrapper_content aside.profile h1 {
@@ -290,3 +300,211 @@ div.wrapper_content aside.profile .images ul li {
   margin-right: 5px;
   margin: 0 5px 5px 0;
 }
+
+div.wrapper_content .timeline {
+  flex: 1;
+  background: #fff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper_content .timeline nav {
+  border-bottom: 1px solid #e6ebed;
+  padding: 10px 15px;
+}
+
+div.wrapper_content .timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper_content .timeline nav a.active {
+  color: #000;
+}
+
+div.wrapper_content .timeline nav a:first-child {
+  margin: 0;
+}
+
+div.wrapper_content .timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper_content .timeline ul.tweets li {
+  border-bottom: 1px solid #e6ebed;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper_content .timeline ul.tweets li > img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper_content .timeline ul.tweets li .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper_content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper_content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 13px;
+  color: #1f2226;
+}
+
+div.wrapper_content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2226;
+  margin-top: 5px;
+}
+
+div.wrapper_content .timeline ul.tweets li .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper_content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #667580;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.wrapper_content .timeline ul.tweets li .actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper_content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
+}
+
+div.wrapper_content aside.widgets {
+  width: 290px;
+  margin-top: 10px;
+}
+
+div.wrapper_content aside.widgets .widget {
+  background: #fff;
+  padding: 15px;
+}
+
+div.wrapper_content aside.widgets .widget .title{
+  display: flex;
+  align-items: baseline;
+}
+
+div.wrapper_content aside.widgets .widget .title strong {
+  font-size: 18px;
+  color: #1f2226;
+}
+
+div.wrapper_content aside.widgets .widget .title a {
+  color: #3bb9e3;
+  font-size: 12px;
+  text-decoration: none;
+  position: relative;
+  padding-left: 10px;
+}
+
+div.wrapper_content aside.widgets .widget .title a::before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  margin-left: 5px;
+  margin-right: 5px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+
+div.wrapper_content aside.widgets .follow ul {
+  list-style: none;
+  /* display: flex;
+  flex-direction: column; */
+
+  margin-top: 10px;
+}
+
+div.wrapper_content aside.widgets .follow ul li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e9ed;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile {
+  display: flex;
+  align-items: center;
+}
+
+div.wrapper_content aside.widgets .follow ul li:last-child {
+  border: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile .info {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile .info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile .info strong span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #667580;
+}
+
+div.wrapper_content aside.widgets .follow ul li .profile .info button {
+  height: 27px;
+  background: #fff;
+  margin-top: 4px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border: 1px solid #3bb9e3;
+  border-radius: 16px;
+}
+
+div.wrapper_content aside.widgets .follow ul li > a {
+  color: #ccd6dd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
+
+
